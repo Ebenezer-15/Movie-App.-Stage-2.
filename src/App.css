@@ -1,38 +1,78 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/* MovieCard.css */
+
+/* Style for the Movie Card */
+.movie-card {
+  width: 1400px; /* Adjust the width to your desired size */
+  margin: 10px auto; /* Add margin and use 'auto' to horizontally center the card */
+  background-color: fff; /* Background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the card */
+  text-align: center; /* Center text content horizontally */
+  display: grid; /* Use CSS Grid */
+  place-items: center; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Styles for other elements inside the card, if needed */
+.movie-card img {
+  max-width: 200px; /* Ensure images don't exceed the card's width */
+  height: auto; /* Maintain aspect ratio */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mv{
+  width: 200px;
+  height: 440px;
+  margin-top: 20px;
+}
+
+/* Example CSS */
+.hero {
+  /* Your hero section styles */
+}
+
+.hero-content {
+  /* Center-align your content */
+  text-align: center;
+}
+
+.hero-icons {
+  /* Style for icons and search bar container */
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.left-icon,
+.right-icon {
+  /* Style for left and right icons */
+  font-size: 24px;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-bar {
+  /* Style for the search bar */
+  flex: 1; /* Take up available space */
+  margin: 0 16px; /* Add margin between icons and search bar */
 }
+
+.search-bar input {
+  /* Style for the search input field */
+  width: 100%;
+  padding: 8px;
+}
+
+
+
+
+

@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
+import Routes from './Routes'; // Import your Routes component
+import './index.css'; // Import the Tailwind CSS styles
+import HeroSection from './HeroSection';
 import './App.css';
+import Footer from './footer';
 
 function App() {
-  return (
+  return (  
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+ <HeroSection />
+    <h1 className='container text-lg font-bold'>Featured Movie</h1>
+    <Routes />
+    
+    <Footer />
     </div>
   );
 }
