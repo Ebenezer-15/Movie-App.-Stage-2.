@@ -55,7 +55,7 @@ https://www.themoviedb.org/.
 
 ## Deployment
 
-This project is deployed using Vercel. You can access the live version of the app at https://hngx-task-2.vercel.app/
+This project is deployed using Vercel. You can access the live version of the app at https://movie-app-stage-2.vercel.app/
 .
 
 ## Acknowledgments

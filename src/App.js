@@ -8,10 +8,9 @@ import Footer from './footer';
 function App() {
   return (  
     <div className="App">
- <HeroSection />
+    <HeroSection />
     <h1 className='container text-lg font-bold mt-5'>Featured Movie</h1>
     <Routes />
-    
     <Footer />
     </div>
   );

@@ -1,7 +1,7 @@
-
-
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import config from './config';
+const apiKey = config.APP_API_KEY;
 
 function MovieDetails() {
   const { id } = useParams();
@@ -10,7 +10,7 @@ function MovieDetails() {
 
   useEffect(() => {
   
-    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${'5050d39c200a0d0a45a96cf308e0f923'}`)
+    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
       .then((response) => response.json())
       .then((data) => {
         setMovie(data);

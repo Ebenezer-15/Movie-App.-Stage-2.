@@ -9,7 +9,7 @@
 
 .movie-card {
   width: 1400px;
-  /* margin: 10px auto;  */
+  margin: 10px auto; 
   background-color: fff; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px; 
@@ -41,7 +41,7 @@
 .hero-title, .hero-description{
     color: white;
     text-align: center;
-  font-weight: bold;
+    font-weight: bold;
 
 }
 

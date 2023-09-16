@@ -7,7 +7,6 @@ function Home() {
   const [top10Movies, setTop10Movies] = useState([]);
 
   useEffect(() => {
-    // Fetch the top 10 movies when the component mounts
     fetchTop10Movies()
       .then((movies) => setTop10Movies(movies))
       .catch((error) => console.error(error));
