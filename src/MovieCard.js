@@ -20,6 +20,10 @@ function MovieCard({ movie }) {
         <p data-testid="movie-release-date" className="text-gray-600">
           Release Date: {movie.release_date}
         </p>
+        <p data-testid="movie-release-date" className="text-gray-600 pt-3">
+          Rating: {movie.vote_average}
+        </p>
+        
       </div>
     </div>
   );

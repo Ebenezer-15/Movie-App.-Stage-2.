@@ -1,9 +1,7 @@
-// Routes.js
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './Home'; // Import your Home component
-import MovieDetails from './MovieDetails'; // Import your MovieDetails component
+import Home from './Home'; 
+import MovieDetails from './MovieDetails'; 
 
 function Routes() {
   return (
@@ -11,7 +9,7 @@ function Routes() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/movies/:id" component={MovieDetails} />
-        {/* Add other routes as needed */}
+      
       </Switch>
     </Router>
   );

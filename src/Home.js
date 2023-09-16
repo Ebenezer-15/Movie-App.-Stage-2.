@@ -1,9 +1,7 @@
-
-
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom'; // Uncomment this line
-import fetchTop10Movies from './fetchTop10Movies'; // Import the function to fetch top 10 movies
-import MovieCard from './MovieCard'; // Import the MovieCard component
+import { Link } from 'react-router-dom'; 
+import fetchTop10Movies from './fetchTop10Movies'; 
+import MovieCard from './MovieCard'; 
 
 function Home() {
   const [top10Movies, setTop10Movies] = useState([]);

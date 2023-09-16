@@ -17,4 +17,5 @@ async function fetchTop10Movies() {
   }
 }
 
+
 export default fetchTop10Movies;

@@ -9,7 +9,7 @@ function MovieDetails() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Replace with your API endpoint to fetch movie details
+  
     fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${'5050d39c200a0d0a45a96cf308e0f923'}`)
       .then((response) => response.json())
       .then((data) => {
@@ -33,11 +33,9 @@ function MovieDetails() {
   return (
     <div className="container mx-auto mt-8 p-4 bg-white rounded shadow-lg">
       <h2 className="text-2xl font-semibold mb-2">{movie.title}</h2>
-      <p className="text-gray-600">Release Date: {movie.release_date}</p>
+      <p className="text-gray-600">Release Date: {movie.release_date}</p> 
       <p className="text-gray-600">Runtime: {movie.runtime} minutes</p>
       <p className="mt-4">{movie.overview}</p>
-      {/* Add more details as needed */}
-      {/* Display movie details here */}
     </div>
   );
 }

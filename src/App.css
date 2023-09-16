@@ -7,67 +7,92 @@
   text-align: center;
 }
 
-
-
-/* MovieCard.css */
-
-/* Style for the Movie Card */
 .movie-card {
-  width: 1400px; /* Adjust the width to your desired size */
-  margin: 10px auto; /* Add margin and use 'auto' to horizontally center the card */
-  background-color: fff; /* Background color */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
-  border-radius: 8px; /* Rounded corners */
-  padding: 20px; /* Padding inside the card */
-  text-align: center; /* Center text content horizontally */
-  display: grid; /* Use CSS Grid */
+  width: 1400px;
+  margin: 10px auto; 
+  background-color: fff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; 
+  padding: 20px; 
+  text-align: center; 
+  display: grid; 
   place-items: center; 
 }
 
-/* Styles for other elements inside the card, if needed */
 .movie-card img {
-  max-width: 200px; /* Ensure images don't exceed the card's width */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 200px; 
+  height: auto; 
 }
 
 .mv{
   width: 200px;
-  height: 440px;
+  height: 500px;
   margin-top: 20px;
 }
 
-/* Example CSS */
-.hero {
-  /* Your hero section styles */
+.hero-image{
+  position: relative;
+}
+
+.hero-title {
+  font-size: 30px;
+}
+
+.hero-title, .hero-description{
+    color: white;
+    text-align: center;
+  font-weight: bold;
+
+}
+
+.watch-trailer-button{
+  color: white;
+  margin: 10px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .hero-content {
-  /* Center-align your content */
-  text-align: center;
-}
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+};
 
 .hero-icons {
-  /* Style for icons and search bar container */
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 20px 15px;
 }
 
 .left-icon,
 .right-icon {
-  /* Style for left and right icons */
   font-size: 24px;
-  color: #fff;
 }
 
 .search-bar {
-  /* Style for the search bar */
-  flex: 1; /* Take up available space */
-  margin: 0 16px; /* Add margin between icons and search bar */
+ width: 230px; 
+  margin: 0 16px; 
+}
+input[type="search"]:focus {
+  outline: none;
+  border: 1px solid #ccc; 
+  background-color: #fff; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
 }
 
 .search-bar input {
-  /* Style for the search input field */
   width: 100%;
   padding: 8px;
 }

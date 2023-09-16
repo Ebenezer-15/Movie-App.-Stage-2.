@@ -1,6 +1,6 @@
 import React from 'react';
-import Routes from './Routes'; // Import your Routes component
-import './index.css'; // Import the Tailwind CSS styles
+import Routes from './Routes';
+import './index.css'; 
 import HeroSection from './HeroSection';
 import './App.css';
 import Footer from './footer';
